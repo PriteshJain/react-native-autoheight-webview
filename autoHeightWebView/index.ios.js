@@ -148,7 +148,8 @@ export default class AutoHeightWebView extends PureComponent {
       enableAnimation,
       heightOffset,
       style,
-      scrollEnabled
+      scrollEnabled,
+      useWebKit
     } = this.props;
     const { source, script } = this.getUpdatedState(this.props, getBaseScript, getIframeBaseScript);
     return (
@@ -177,6 +178,7 @@ export default class AutoHeightWebView extends PureComponent {
           scalesPageToFit={scalesPageToFit}
           injectedJavaScript={script}
           source={source}
+          useWebKit={useWebKit}
           onNavigationStateChange={this.handleNavigationStateChange}
         />
       </Animated.View>
