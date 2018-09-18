@@ -60,7 +60,8 @@ export default class AutoHeightWebView extends PureComponent {
     scalesPageToFit: false,
     enableAnimation: true,
     animationDuration: 255,
-    heightOffset: 12
+    heightOffset: 12,
+    useWebKit: false
   };
 
   constructor(props) {
